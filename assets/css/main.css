@@ -163,6 +163,14 @@ h4 {
     margin-top: 1em;
 }
 
+h5 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #f35858;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
 a {
 	-moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 	-webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -588,6 +596,42 @@ body:not(.homepage) #header-wrapper {
     padding: 4em 0 2em 0;
 }
 
+/* Project Navigation for Internal Pages */
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+    margin-top: 4em;
+    border-top: 1px solid #c2c7cc;
+    clear: both;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #52575c;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f35858;
+}
+
+.nav-link i {
+    font-size: 1.5em;
+}
+
+.nav-link span {
+    font-size: 1em;
+}
+
+.nav-placeholder {
+    width: 100px; /* Ensures spacing remains consistent when a link is hidden */
+}
+
 /* Header & Hero */
 #header-wrapper {
     position: relative;
@@ -766,6 +810,19 @@ body:not(.homepage) #header-wrapper {
     #footer-wrapper {
         padding: 5em 0 5em 0;
     }
+
+    .project-navigation {
+        padding: 1.75em 0;
+        margin-top: 3.5em;
+    }
+    
+    .nav-link i {
+        font-size: 1.4em;
+    }
+    
+    .nav-link span {
+        font-size: 0.95em;
+    }
 }
 
 /* Narrow */
@@ -810,6 +867,15 @@ body:not(.homepage) #header-wrapper {
 	.row > .col-3 {
         width: 50%;
     }
+
+    .project-navigation {
+        padding: 1.5em 0;
+        margin-top: 3em;
+    }
+    
+    .nav-link i {
+        font-size: 1.3em;
+    }
 }
 
 /* Narrower */
@@ -853,6 +919,15 @@ body:not(.homepage) #header-wrapper {
     .feature img {
         max-width: 100%;
         height: auto;
+    }
+
+    .project-navigation {
+        padding: 1.25em 0;
+        margin-top: 2.5em;
+    }
+    
+    .nav-link span {
+        font-size: 0.9em;
     }
 }
 
@@ -936,6 +1011,20 @@ body:not(.homepage) #header-wrapper {
     
     .row > * {
         padding: 2em 20px;
+    }
+
+    .project-navigation {
+        padding: 1.5em 0;
+        margin-top: 2em;
+        width: 100%; /* Ensures full width on mobile */
+    }
+    
+    .nav-link span {
+        display: none;
+    }
+    
+    .nav-link i {
+        font-size: 2em;
     }
 }
 
@@ -1021,6 +1110,15 @@ body:not(.homepage) #header-wrapper {
     
     .image.featured {
         margin: 0 0 1.5em 0;
+    }
+
+    .project-navigation {
+        padding: 1.25em 0;
+        margin-top: 1.5em;
+    }
+    
+    .nav-link i {
+        font-size: 1.75em;
     }
 }
 
